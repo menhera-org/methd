@@ -12,3 +12,18 @@ homepage = "https://github.com/menhera-org/methd"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+aes-gcm = "0.10.3"
+anyhow = "1.0.75"
+base64 = "0.21.5"
+clap = { version = "4.4.7", features = ["derive"] }
+ed25519-dalek = { version = "2.0.0", features = ["rand_core"] }
+env_logger = "0.10.0"
+glob = "0.3.1"
+log = "0.4.20"
+rand = "0.8.5"
+serde = { version = "1.0.192", features = ["derive"] }
+tokio = { version = "1.33.0", features = ["full"] }
+tokio-tun = "0.11.2"
+toml = "0.8.8"
+uuid = { version = "1.5.0", features = ["v4"] }
+x25519-dalek = { version = "2.0.0", features = ["getrandom"] }

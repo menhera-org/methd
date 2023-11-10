@@ -1,0 +1,18 @@
+[daemon]
+endpoint = "[::]:2176" # if 0.0.0.0, cannot connect to IPv6 peers
+key_path = "methd.key" # Must not be readable to everyone
+config_dir = "conf.d" # relative to dirname(methd.toml)
+
+# Examples
+#[peers]
+#[peers.peer1]
+#public_key = "<base64>"
+#endpoint = "192.168.1.35:2176"
+
+#[peers.peer2]
+#public_key = "<base64>"
+#endpoint = "[fd00:dead:beef::2001]:2176"
+
+#[peers.peer3]
+#public_key = "<base64>"
+# Peer behind NAT, no fixed endpoint
